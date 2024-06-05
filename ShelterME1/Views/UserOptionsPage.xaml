@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShelterME1.Views.UserOptionsPage"
+             Title="User"
+             BackgroundColor="PeachPuff">
+
+    <StackLayout Padding="30">
+        <Label Text="Types of Users"
+               FontSize="40" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand"/>
+
+        <Button Text="Volunteers" 
+                Clicked="OnVolunteerButtonClicked"
+                HeightRequest="50"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="Red" 
+                TextColor="White" />
+
+        <Button Text="Donors" 
+                Clicked="OnDonorsButtonClicked"
+                HeightRequest="50"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="Red" 
+                TextColor="White" />
+
+        <Button Text="Social Workers"
+                HeightRequest="50"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="Red" 
+                TextColor="White" />
+    </StackLayout>
+</ContentPage>

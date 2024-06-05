@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShelterME1.Views.ShelterPage"
+             Title="Shelter Information"
+             BackgroundColor="PeachPuff">
+
+    <ScrollView>
+        <StackLayout>
+
+            <Image Source="sh1.png" HeightRequest="200" WidthRequest="300" Aspect="AspectFit" />
+            <Label Text="Haven Night Shelter" FontSize="Title" HorizontalOptions="Center" />
+            <Label Text="Established in 1978" FontSize="Medium" HorizontalOptions="Center" />
+            <Label Text="Cape Town, South Africa" FontSize="Medium" HorizontalOptions="Center" />
+            <Button Text="Shelter Webpage" HorizontalOptions="CenterAndExpand"  Clicked="OnVisitWebsiteClicked" BackgroundColor="Red" 
+                TextColor="White" />
+
+            <Image Source="h3.png" HeightRequest="200" WidthRequest="300" Aspect="AspectFit" />
+            <Label Text="Homestead" FontSize="Title" HorizontalOptions="Center" />
+            <Label Text="Established in 1982" FontSize="Medium" HorizontalOptions="Center" />
+            <Label Text="Cape Town, South Africa" FontSize="Medium" HorizontalOptions="Center" />
+            <Button Text="Shelter Webpage" HorizontalOptions="CenterAndExpand" BackgroundColor="Red" 
+                TextColor="White" />
+
+            <Image Source="a1.png" HeightRequest="300" WidthRequest="400" Aspect="AspectFit" />
+            <Label Text="The Ark City of Refuge" FontSize="Title" HorizontalOptions="Center" />
+            <Label Text="Established in 1992" FontSize="Medium" HorizontalOptions="Center" />
+            <Label Text="Cape Town, South Africa" FontSize="Medium" HorizontalOptions="Center" />
+            <Button Text="Shelter Webpage" HorizontalOptions="CenterAndExpand" BackgroundColor="Red" 
+                TextColor="White" />
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

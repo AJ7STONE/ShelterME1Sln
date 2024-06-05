@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShelterME1.Views.ResourcePage"
+             Title="Resources"
+             BackgroundColor="PeachPuff">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="User Details" FontSize="Large" HorizontalOptions="Center"/>
+
+            <Entry x:Name="NameEntry" Placeholder="Name" />
+            <Entry x:Name="SurnameEntry" Placeholder="Surname" />
+            <Entry x:Name="ContactDetailsEntry" Placeholder="Contact Details" />
+            <Entry x:Name="EmailEntry" Placeholder="Email" />
+            <Entry x:Name="OtherDetailsEntry" Placeholder="Other Details" />
+            
+
+            <Label Text="Resources" FontSize="Large" HorizontalOptions="Center" Margin="20,0"/>
+
+            <Picker x:Name="ResourceTypePicker" Title="Select Resource Type" SelectedIndexChanged="OnResourceTypeSelected">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Food</x:String>
+                        <x:String>Clothing</x:String>
+                        <x:String>Hygiene Products</x:String>
+                        <x:String>Health Supplies</x:String>
+                        <x:String>Furniture and Bedding</x:String>
+                        <x:String>Kitchen Supplies</x:String>
+                        <x:String>Monetary Donations</x:String>
+                        <x:String>Gift Cards and Vouchers</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <StackLayout x:Name="ResourceItemsLayout">
+                <!-- CheckBoxes for Resource Items will be added here dynamically -->
+            </StackLayout>
+
+            <Button Text="Submit" Clicked="OnSubmitClicked" HorizontalOptions="Center" Margin="0,20,0,0" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

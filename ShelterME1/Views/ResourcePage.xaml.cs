@@ -105,10 +105,9 @@ namespace ShelterME1.Views
 
             var user = new User
             {
-                Name = name,
-                Surname = surname,
+                FullName = name,
                 ContactDetails = contactDetails,
-                Email = email,
+                EmailAddress = email,
                 OtherDetails = otherDetails
             };
 

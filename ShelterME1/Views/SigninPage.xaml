@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShelterME1.Views.SigninPage"
+             BackgroundColor="PeachPuff"
+             Title="Sign Up">
+
+    <ScrollView>
+        <StackLayout Padding="30">
+            <Entry x:Name="FullNameEntry" Placeholder="Full Name" Margin="0,5"/>
+            <Entry x:Name="EmailAddressEntry" Placeholder="Email Address" Margin="0,5"/>
+            <Entry x:Name="UsernameEntry" Placeholder="Username" Margin="0,5"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" Margin="0,5"/>
+            <DatePicker x:Name="DatePicker" Margin="0,5"/>
+            <Picker x:Name="GenderPicker" Title="Gender" Margin="0,5">
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                    <x:String>Other</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry x:Name="LocationEntry" Placeholder="Location" Margin="0,5"/>
+            <Picker x:Name="SecurityQuestionPicker" Title="Security Question" Margin="0,5">
+                <Picker.Items>
+                    <x:String>What is your mother's maiden name?</x:String>
+                    <x:String>What was the name of your first pet?</x:String>
+                    <x:String>What was the name of your first school?</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry x:Name="SecurityAnswerEntry" Placeholder="Security Answer" Margin="0,5"/>
+            <CheckBox x:Name="TermsCheckBox" Text="I agree to the Terms of Service and Privacy Policy" Margin="0,5"/>
+
+         
+            <Button Text="Register" Clicked="OnSignupButtonClicked" BackgroundColor="Red" TextColor="White" Margin="10,20,10,0"/>
+            <Label x:Name="MessageLabel" TextColor="Red" HorizontalOptions="Center" Margin="0,20,0,0"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

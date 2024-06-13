@@ -22,17 +22,17 @@
             <Label 
                 Text="Uniting Hearts, One Shelter at a Time"
                 HorizontalOptions="Center"
-                FontSize="13"/>
+                FontSize="15"/>
             <Label 
                 Text="Connecting People with Compassion and Care!"
                 HorizontalOptions="Center"
-                FontSize="13"/>
+                FontSize="15"/>
 
             <Button
                 Text="Shelter Information" 
                 Clicked="OnShelterButtonClicked"
-                HeightRequest="50"
-                WidthRequest="160"
+                HeightRequest="60"
+                WidthRequest="170"
                 BackgroundColor="Red" 
                 TextColor="White" 
                 />
@@ -40,16 +40,16 @@
             <Button
                 Text="Users"
                 Clicked="OnUsersButtonClicked"
-                HeightRequest="50"
-                WidthRequest="160"
+                HeightRequest="60"
+                WidthRequest="170"
                 BackgroundColor="Red" 
                 TextColor="White" />
 
             <Button
                 Text="Resources"
                 Clicked="OnResourcesButtonClicked"
-                HeightRequest="50"
-                WidthRequest="160"
+                HeightRequest="60"
+                WidthRequest="170"
                 BackgroundColor="Red" 
                 TextColor="White" />
         </VerticalStackLayout>

@@ -9,22 +9,27 @@ namespace ShelterME1.Views
             InitializeComponent();
         }
 
-        private async void OnSignupButtonClicked(object sender, EventArgs e)
+        private async void OnLoginButtonClicked(object sender, EventArgs e)
         {
             string username = UsernameEntry.Text;
             string password = PasswordEntry.Text;
 
-            // Simulate a backend request for user registration
+            // Simulate a backend request for user login
             if (!string.IsNullOrWhiteSpace(username) && !string.IsNullOrWhiteSpace(password))
             {
-                // Assuming registration is successful
-                await DisplayAlert("Success", "Signup successful!", "OK");
+                // Assuming login is successful
+                await DisplayAlert("Success", "Login successful!", "OK");
                 await Navigation.PushAsync(new HomePage());
             }
             else
             {
                 MessageLabel.Text = "Please fill out all fields";
             }
+        }
+
+        private async void OnSignUpButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SigninPage());
         }
     }
 }

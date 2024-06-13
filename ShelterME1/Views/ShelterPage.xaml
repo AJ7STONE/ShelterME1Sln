@@ -22,7 +22,7 @@
             <Button Text="Shelter Webpage" HorizontalOptions="CenterAndExpand" BackgroundColor="Red" 
                 TextColor="White" />
 
-            <Image Source="a1.png" HeightRequest="300" WidthRequest="400" Aspect="AspectFit" />
+            <Image Source="ark.png" HeightRequest="300" WidthRequest="400" Aspect="AspectFit" />
             <Label Text="The Ark City of Refuge" FontSize="Title" HorizontalOptions="Center" />
             <Label Text="Established in 1992" FontSize="Medium" HorizontalOptions="Center" />
             <Label Text="Cape Town, South Africa" FontSize="Medium" HorizontalOptions="Center" />

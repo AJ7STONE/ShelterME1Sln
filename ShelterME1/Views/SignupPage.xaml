@@ -5,7 +5,7 @@
              BackgroundColor="PeachPuff"
              Title="Sign in/Login">
 
-    <StackLayout Padding="30">
+    <StackLayout Spacing="10" Padding="30">
         <Image Source="s1.png" HeightRequest="185" Aspect="AspectFit" />
 
         <Entry x:Name="UsernameEntry" Placeholder="Username"/>
@@ -14,10 +14,10 @@
         <Button Text="Login" Clicked="OnLoginButtonClicked" BackgroundColor="Red" 
                 TextColor="White" />
 
-        
         <Button Text="Sign up" BackgroundColor="Red" 
-                TextColor="White" Clicked="OnSignUpButtonClicked"/>
+                TextColor="White" Clicked="OnSignupButtonClicked"/>
 
         <Label x:Name="MessageLabel" TextColor="Red" HorizontalOptions="Center" Margin="0,20,0,0"/>
     </StackLayout>
 </ContentPage>
+

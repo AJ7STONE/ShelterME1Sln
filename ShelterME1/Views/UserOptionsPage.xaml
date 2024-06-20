@@ -13,7 +13,7 @@
 
         <Button Text="Volunteers" 
                 Clicked="OnVolunteerButtonClicked"
-                HeightRequest="50"
+                HeightRequest="70"
                 WidthRequest="200"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
@@ -22,7 +22,7 @@
 
         <Button Text="Donors" 
                 Clicked="OnDonorsButtonClicked"
-                HeightRequest="50"
+                HeightRequest="70"
                 WidthRequest="200"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"
@@ -30,7 +30,7 @@
                 TextColor="White" />
 
         <Button Text="Social Workers"
-                HeightRequest="50"
+                HeightRequest="70"
                 WidthRequest="200"
                 HorizontalOptions="Center"
                 VerticalOptions="CenterAndExpand"

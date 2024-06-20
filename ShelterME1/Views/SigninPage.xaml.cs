@@ -7,12 +7,12 @@ namespace ShelterME1.Views
 {
     public partial class SigninPage : ContentPage
     {
-        private readonly UserService _userService;
+      //  private readonly UserService _userService;
 
         public SigninPage()
         {
             InitializeComponent();
-            _userService = new UserService(); // Assuming UserService handles database operations
+        //    _userService = new UserService(); // Assuming UserService handles database operations
         }
 
         private async void OnSignupButtonClicked(object sender, EventArgs e)
@@ -55,7 +55,8 @@ namespace ShelterME1.Views
             };
 
             // Save the new user to the database
-            bool success = await _userService.RegisterUser(newUser);
+
+            bool success = await App.Database.RegisterUser(newUser);
 
             if (success)
             {
@@ -70,3 +71,4 @@ namespace ShelterME1.Views
         }
     }
 }
+

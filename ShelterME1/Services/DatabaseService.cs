@@ -68,6 +68,18 @@ namespace ShelterME1.Services
             return _database.Table<User>().ToListAsync();
         }
 
+        public async Task<bool> RegisterUser(User user)
+        {
+            // Check if the username already exists
+            var existingUser = await _database.Table<User>().Where(u => u.Username == user.Username).FirstOrDefaultAsync();
+            if (existingUser != null)
+                return false; // Username already exists
+
+            // Save the new user to the database
+            await _database.InsertAsync(user);
+            return true; // Registration successful
+        }
+
     }
 }
 

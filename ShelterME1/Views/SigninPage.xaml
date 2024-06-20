@@ -28,9 +28,13 @@
                 </Picker.Items>
             </Picker>
             <Entry x:Name="SecurityAnswerEntry" Placeholder="Security Answer" Margin="0,5"/>
-            <CheckBox x:Name="TermsCheckBox" Text="I agree to the Terms of Service and Privacy Policy" Margin="0,5"/>
 
-         
+            <!-- Use a horizontal StackLayout to place the CheckBox and Label next to each other -->
+            <StackLayout Orientation="Horizontal" Margin="0,5">
+                <CheckBox x:Name="TermsCheckBox" />
+                <Label Text="I agree to the Terms of Service and Privacy Policy" VerticalOptions="Center" />
+            </StackLayout>
+
             <Button Text="Register" Clicked="OnSignupButtonClicked" BackgroundColor="Red" TextColor="White" Margin="10,20,10,0"/>
             <Label x:Name="MessageLabel" TextColor="Red" HorizontalOptions="Center" Margin="0,20,0,0"/>
         </StackLayout>

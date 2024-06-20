@@ -27,7 +27,7 @@ namespace ShelterME1.Views
             }
         }
 
-        private async void OnSignUpButtonClicked(object sender, EventArgs e)
+        private async void OnSignupButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SigninPage());
         }
